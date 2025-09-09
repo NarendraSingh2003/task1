@@ -1,40 +1,35 @@
 # Cloud Engineer Assignment – Task 1
 
-## Objective
-Create **2 Linux Servers** on AWS, configure Apache Web Servers, and host unique webpages on each VM other than the default index file.
+ Objective
+Create **2 Linux servers** on AWS, install Apache web server on each, and host unique webpages.
 
-
-## Steps Performed
-
-### 1. Launch Linux EC2 Instances
-- Region: `<your-region>`  
-- Instances: **VM1** and **VM2** (Ubuntu 24.04 LTS)  
-- Instance type: `t2.micro` (Free Tier)  
+ 1. Launch Linux EC2 Instances
+- Created 2 Linux instances in AWS (Ubuntu 24.04 LTS).  
+- Instance type: `t2.micro`.  
 - Security Group Rules:
-  - **SSH (22)** – allowed from My IP  
-  - **HTTP (80)** – allowed from 0.0.0.0/0
-    
-### 2. Connect to Instances via SSH
-ex: ssh -i mykey.pem ubuntu@<PUBLIC_IP_VM1>
-  ssh -i mykey.pem ubuntu@<PUBLIC_IP_VM2>
-3. Install Apache Web Server
-On each VM:
+  - SSH (22) – to connect with terminal.  
+  - HTTP (80) – to open webpage in browser. 
+ 2. Install Apache
 sudo apt update -y
 sudo apt install -y apache2
 sudo systemctl enable --now apache2
-4. Create Unique Webpages
+3. Create Unique Webpages
 On VM1:
 echo "<h1>Hello from VM1</h1>" | sudo tee /var/www/html/index.html
 On VM2:
 echo "<h1>Hello from VM2</h1>" | sudo tee /var/www/html/index.html
-5. Verify Webpages
-Access in browser:
+4. Test in Browser
+VM1: http://54.204.52.88 → shows Hello from VM1
+VM2: http://3.83.142.60 → shows Hello from VM2
 
-http://<VM1_Public_IP> → shows Hello from VM1
-http://<VM2_Public_IP> → shows Hello from VM2
+Screenshots (to include)
+AWS console showing 2 running Linux instances.
+Terminal showing Apache installed and page created.
+Browser showing Hello from VM1 at 54.204.52.88.
+Browser showing Hello from VM2 at 3.83.142.60.
 
-Command-line check:
-curl http://localhost
-
-yaml
-Copy code
+Conclusion
+Successfully created 2 Linux servers in AWS.
+Installed Apache web servers.
+Hosted unique webpages on each VM.
+Verified by accessing from browser
