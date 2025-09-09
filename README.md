@@ -3,7 +3,6 @@
 ## Objective
 Create **2 Linux Servers** on AWS, configure Apache Web Servers, and host unique webpages on each VM other than the default index file.
 
----
 
 ## Steps Performed
 
@@ -13,15 +12,11 @@ Create **2 Linux Servers** on AWS, configure Apache Web Servers, and host unique
 - Instance type: `t2.micro` (Free Tier)  
 - Security Group Rules:
   - **SSH (22)** – allowed from My IP  
-  - **HTTP (80)** – allowed from 0.0.0.0/0  
-
----
-
+  - **HTTP (80)** – allowed from 0.0.0.0/0
+    
 ### 2. Connect to Instances via SSH
-Example:
-```bash
-ssh -i mykey.pem ubuntu@<PUBLIC_IP_VM1>
-ssh -i mykey.pem ubuntu@<PUBLIC_IP_VM2>
+ex: ssh -i mykey.pem ubuntu@<PUBLIC_IP_VM1>
+  ssh -i mykey.pem ubuntu@<PUBLIC_IP_VM2>
 3. Install Apache Web Server
 On each VM:
 sudo apt update -y
