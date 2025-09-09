@@ -32,10 +32,9 @@ VM2: http://3.83.142.60
  → shows Hello from VM2
 
 Screenshots to include
-AWS console showing 2 running Linux instances
-Terminal showing Apache installed and page created
-Browser showing Hello from VM1 at 54.204.52.88
-
+AWS console showing 2 running Linux instances,
+Terminal showing Apache installed and page created,
+Browser showing Hello from VM1 at 54.204.52.88,
 Browser showing Hello from VM2 at 3.83.142.60
 
 Conclusion
