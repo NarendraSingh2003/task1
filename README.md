@@ -1,7 +1,7 @@
-# Cloud Engineer Assignment – Task 1
+ Cloud Engineer Assignment – Task 1
 
  Objective
-Create **2 Linux servers** on AWS, install Apache web server on each, and host unique webpages.
+Create 2 Linux servers on AWS, install Apache web server on each, and host unique webpages.
 
  1. Launch Linux EC2 Instances
 - Created 2 Linux instances in AWS (Ubuntu 24.04 LTS).  
