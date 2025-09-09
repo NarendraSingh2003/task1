@@ -29,6 +29,7 @@ VM1: http://54.204.52.88
  → shows Hello from VM1
 
 VM2: http://3.83.142.60
+
  → shows Hello from VM2
 
 Screenshots to include
